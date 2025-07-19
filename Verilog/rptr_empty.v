@@ -17,7 +17,7 @@ module rptr_empty #(
 
     assign raddr = rptr_bin[ADDR_SIZE-1:0];
     assign rptr_gray = (rptr_bin >> 1) ^ rptr_bin;
-.
+
     wire [ADDR_SIZE:0] rptr_bin_next = rptr_bin + (rd_en & ~rempty);
 
     wire [ADDR_SIZE:0] rptr_gray_next = (rptr_bin_next>>1) ^ rptr_bin_next; 
