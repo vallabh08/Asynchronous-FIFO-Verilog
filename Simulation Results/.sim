@@ -1,1 +1,0 @@
-The FIFO design was rigorously verified using a self-checking Verilog testbench. The testbench simulates a real-world scenario with different, asynchronous write and read clocks (wclk @ 100MHz, rclk @ 62.5MHz) and performs a series of stress tests. The following waveforms demonstrate the correct behavior of the FIFO during key operational phases.
